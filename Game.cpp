@@ -6,7 +6,6 @@
 #include <QTimer>
 #include <QGraphicsTextItem>
 #include <QFont>
-#include "Enemy.h"
 #include <QImage>
 #include <QBrush>
 #include "Game.h"
@@ -18,7 +17,7 @@ Game::Game(QWidget *parent)
     //QGraphicsScene * scene = new QGraphicsScene;
     scene = new QGraphicsScene();
     scene->setSceneRect(0,0,800,600); //ajusta o tamanho do cenario com o tamanho da janela (assim as balas saem do cenario)
-    scene->setBackgroundBrush(QBrush(QImage(":/images/Images/starBackground.png")));
+    scene->setBackgroundBrush(QBrush(QImage(":/sounds/Images/starBackground.png")));
     setScene(scene);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);

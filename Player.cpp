@@ -8,7 +8,7 @@
 
 Player::Player(QGraphicsItem *parent): QGraphicsPixmapItem(parent)
 {
-    setPixmap(QPixmap(":/images/Images/player.png"));
+    setPixmap(QPixmap(":/sounds/Images/player.png"));
 }
 
 void Player::keyPressEvent(QKeyEvent *event)

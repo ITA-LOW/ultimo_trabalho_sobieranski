@@ -13,7 +13,7 @@ Enemy::Enemy(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent)
     int random_number = rand() % 700; //maior que isso e os inimigos iam spawnar fora do cenario
     setPos(random_number, 0);
 
-    setPixmap(QPixmap(":/images/Images/enemyShip.png"));
+    setPixmap(QPixmap(":/sounds/Images/enemyShip.png"));
     QTimer * timer = new QTimer();
     connect(timer, SIGNAL(timeout()),this, SLOT(move()));
 
