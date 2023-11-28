@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/sounds">
+        <file>sounds/Hall of the Mountain King.mp3</file>
+        <file>sounds/Laser.mp3</file>
+        <file>sounds/The Offspring - Hit that.mp3</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>Images/backgroundColor.png</file>
+        <file>Images/enemyShip.png</file>
+        <file>Images/enemyUFO.png</file>
+        <file>Images/laserGreen.png</file>
+        <file>Images/laserGreenShot.png</file>
+        <file>Images/laserRed.png</file>
+        <file>Images/laserRedShot.png</file>
+        <file>Images/life.png</file>
+        <file>Images/meteorBig.png</file>
+        <file>Images/meteorSmall.png</file>
+        <file>Images/nebula.png</file>
+        <file>Images/player.png</file>
+        <file>Images/playerDamaged.png</file>
+        <file>Images/playerLeft.png</file>
+        <file>Images/playerRight.png</file>
+        <file>Images/preview.jpg</file>
+        <file>Images/readme.txt</file>
+        <file>Images/shield.png</file>
+        <file>Images/spaceArt.svg</file>
+        <file>Images/spaceArt.swf</file>
+        <file>Images/speedLine.png</file>
+        <file>Images/starBackground.png</file>
+        <file>Images/starBig.png</file>
+        <file>Images/starSmall.png</file>
+    </qresource>
+</RCC>
