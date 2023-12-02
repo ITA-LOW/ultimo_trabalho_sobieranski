@@ -9,6 +9,9 @@
 #include <QImage>
 #include <QBrush>
 #include "Game.h"
+#include <QMediaPlayer>
+#include <QAudioOutput>
+
 
 
 Game::Game(QWidget *parent)
@@ -32,15 +35,26 @@ Game::Game(QWidget *parent)
 
     //score/health
     score = new Score();
+    score->setPos(score->x(),score->y());
     scene->addItem(score);
+
     health = new Health;
-    health->setPos(health->x(), health->y()+25);
+    health->setPos(health->x(),health->y()+25);
     scene->addItem(health);
 
     //spawn enemies
     QTimer * timer = new QTimer();
     QObject::connect(timer, SIGNAL(timeout()),player,SLOT(spawn()));
     timer->start(2000);
+
+    //music
+    QMediaPlayer * music = new QMediaPlayer();
+    QAudioOutput * audioOutput = new QAudioOutput();
+
+    music->setAudioOutput(audioOutput);
+    audioOutput->setVolume(10);
+    music->setSource(QUrl("qrc:/sounds/sounds/The Offspring - Hit that.mp3"));
+    music->play();
 
 
 

@@ -1,4 +1,5 @@
-QT       += core gui
+QT       += core gui \
+            multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,6 +11,8 @@ CONFIG += c++11
 
 SOURCES += \
     Bullet.cpp \
+    Bullet_estrabica_1.cpp \
+    Bullet_estrabica_2.cpp \
     Enemy.cpp \
     Game.cpp \
     Health.cpp \
@@ -19,6 +22,8 @@ SOURCES += \
 
 HEADERS += \
     Bullet.h \
+    Bullet_estrabica_1.h \
+    Bullet_estrabica_2.h \
     Enemy.h \
     Game.h \
     Health.h \

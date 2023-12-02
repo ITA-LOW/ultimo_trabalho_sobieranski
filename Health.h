@@ -9,6 +9,8 @@ public:
     Health(QGraphicsItem * parent=0);
     void decrease();
     int getHealth();
+public slots:
+
 private:
     int health;
 };

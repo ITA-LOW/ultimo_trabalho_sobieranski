@@ -3,6 +3,8 @@
 
 #include <QGraphicsPixmapItem>
 #include <QObject>
+#include <QMediaPlayer>
+#include <QAudioOutput>
 
 class Player: public QObject, public QGraphicsPixmapItem
 {
@@ -13,6 +15,8 @@ public:
 public slots:
     void spawn();
 private:
+    QMediaPlayer * bulletsound;
+    QAudioOutput * outputbullet;
 
 };
 
